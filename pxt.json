@@ -1,0 +1,15 @@
+{
+    "name": "eClass micro:bit learning pack - speed monitor",
+    "version": "0.0.1",
+    "description": "Measuring car speed and returning it in string with 4 d.p.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ],
+    "public": false
+}
