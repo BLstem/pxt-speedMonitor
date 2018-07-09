@@ -13,7 +13,7 @@ namespace speedMonitor {
     }
 
     /*
-    * Measuring car speed and return in string. Suitable for learning pack 3, 6 and 7
+    * Measuring car speed and return it in string. Suitable for learning pack 3, 6 and 7
     */
     function calculatingSpeed_float(n: number, t: number): string {
         let speed_tmp = calculatingSpeed(n, t)
@@ -27,12 +27,18 @@ namespace speedMonitor {
         }
     }
 
+    /*
+    * Return "speed" of a motor when idling. 
+    */
     //% blockId="motor_speed"
     //%block="Motor speed %count| time %time"
     export function speedCalculating(count: number, time: number): string {
         return calculatingSpeed_float(count, time)
     }
 
+    /*
+    * Measuring car speed and return it in string. Suitable for learning pack 3, 6 and 7. 
+    */
     //% blockId="car_speed"
     //%block="Car speed Left sensor %countL| Right sensor %countR| Time %time"
     export function carSpeed(countL: number, countR: number, time: number): string {
