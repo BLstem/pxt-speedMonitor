@@ -27,7 +27,7 @@ namespace speedMonitor {
         }
     }
 
-    /*
+    /**
     * Return "speed" of a motor when idling. 
     */
     //% blockId="motor_speed"
@@ -36,7 +36,7 @@ namespace speedMonitor {
         return calculatingSpeed_float(count, time)
     }
 
-    /*
+    /**
     * Measuring car speed and return it in string. Suitable for learning pack 3, 6 and 7. 
     */
     //% blockId="car_speed"
