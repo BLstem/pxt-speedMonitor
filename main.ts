@@ -1,4 +1,6 @@
 //% color=#1D78CB icon="\uf1b9" block="Speed Monitor"
+let Lcount = 0
+let Rcount = 0
 namespace speedMonitor {
 
     /*
@@ -38,11 +40,42 @@ namespace speedMonitor {
     /**
     * Measuring car speed(cm/s) rounded to 4 d.p. and return it in string. Suitable for learning pack 3, 6 and 7. 
     */
-    //%blockId="car_speed" blockExternalInputs=true
-    //%block="Car speed: Left sensor %countL| Right sensor %countR| recalculate every %time | second(s)"
-    export function carSpeed(countL: number, countR: number, time: number): string {
-        let carCount = (countL + countR) / 2
+    //%blockId="car_speed"
+    //%block="Car speed recalculate every %time | second(s)"
+    export function carSpeed(time: number): string {
+        let carCount = (Lcount + Rcount) / 2
         return calculatingSpeed_float(carCount, time)
+    }
+
+    //%blockId="Lcount"
+    //%block="Left Sensor counter"
+    export function leftcount(): number {
+        return Lcount
+    }
+
+    //%blockId="Rcount"
+    //%block="Right Sensor counter"
+    export function rightcount(): number {
+        return Rcount
+    }
+
+    //%blockId="LcountChangeBy1"
+    //%block="Left Sensor counting change by 1"
+    export function leftcountChangeByOne(): void {
+        Lcount++
+    }
+
+    //%blockId="RcountChangeBy1"
+    //%block="Right Sensor counting change by 1"
+    export function rightcountChangeByOne(): void {
+        Rcount++
+    }
+
+    //%blockId="resetCount"
+    //%block="Reset all counters"
+    export function resetCount(): void {
+        Lcount = 0
+        Rcount = 0
     }
 
 }
