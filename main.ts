@@ -29,8 +29,7 @@ namespace speedMonitor {
     /**
     * "Speed"(cm/s) of a idling motor.
     */
-    //%blockId="motor_speed"
-    //%blockId="car_speed" blockExternalInputs=true
+    //%blockId="motor_speed" blockExternalInputs=true
     //%block="Motor speed: Dial count %count| time(s) %time"
     export function speedCalculating(count: number, time: number): string {
         return calculatingSpeed_float(count, time)
