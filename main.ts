@@ -27,19 +27,20 @@ namespace speedMonitor {
     }
 
     /**
-    * "Speed"(cm/s) of a idling motor. 
+    * "Speed"(cm/s) of a idling motor.
     */
     //%blockId="motor_speed"
-    //%block="Motor speed: Dial count %count| recalculate every %time | second(s)"
+    //%blockId="car_speed" blockExternalInputs=true
+    //%block="Motor speed: Dial count %count| time(s) %time"
     export function speedCalculating(count: number, time: number): string {
         return calculatingSpeed_float(count, time)
     }
 
     /**
-    * Measuring car speed(cm/s) rounded to 4 d.p. and return it in string. Suitable for learning pack 3, 6 and 7. 
+    * Measuring car speed(cm/s) rounded to 4 d.p. and return it in string. Suitable for learning pack 3, 6 and 7.
     */
     //%blockId="car_speed" blockExternalInputs=true
-    //%block="Car speed: Left sensor %countL| Right sensor %countR| recalculate every %time | second(s)"
+    //%block="Car speed: Left sensor %countL| Right sensor %countR| time(s) %time"
     export function carSpeed(countL: number, countR: number, time: number): string {
         let carCount = (countL + countR) / 2
         return calculatingSpeed_float(carCount, time)
