@@ -5,7 +5,8 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "SSD1306_OLED": "github:Tinkertanker/pxt-oled-ssd1306"
     },
     "files": [
         "README.md",
