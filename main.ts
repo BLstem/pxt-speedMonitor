@@ -1,4 +1,4 @@
-//% color=#1D78CB icon="\uf1b9" block="Speed Monitor"
+//% color=#1D78CB icon="\uf1b9" block="Speedometer"
 namespace speedMonitor {
 
     /*
