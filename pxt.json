@@ -1,7 +1,7 @@
 {
-    "name": "eClass micro:bit learning pack - speed monitor",
+    "name": "eClass micro:bit learning pack - speedometer",
     "version": "0.0.1",
-    "description": "Measuring car speed and returning it in string with 4 d.p.",
+    "description": "speedometer",
     "license": "MIT",
     "dependencies": {
         "core": "*",

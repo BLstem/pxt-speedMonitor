@@ -1,6 +1,6 @@
-# Speed monitor
+# Speedometer
 
-A package for eClass micro:bit learning pack - speed monitor
+A package for eClass micro:bit learning pack - speedometer
 
 * beta version
 * developed by BL contents team
@@ -12,4 +12,3 @@ A package for eClass micro:bit learning pack - speed monitor
 ## Supported targets
 
 * for PXT/microbit
-
